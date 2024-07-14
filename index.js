@@ -42,7 +42,7 @@ app.use(bodyparser.json());
 
 // Connect database
 const conn = mysql.createConnection({
-    host: 'localhost',
+    host: '127.0.0.1',
     user: 'root',
     password: '',
     database: 'student',
