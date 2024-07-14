@@ -114,6 +114,7 @@ app.post('/student', (req, resp) => {
     value('${_name}','${_email}','${_mobile}','${_address}','${_age}') `;
 
     conn.query(qrr, (err, results) => {
+        console.log('+++++++++++>',qrr);
         if (err) { console.log('Error: ', err); }
         console.log(req.body);
         resp.send({
